@@ -24,4 +24,4 @@ print(transportation,"Transportation is",transportation/income*100,"percent of i
 
 print("You have", total_leftover, "left.")
 
-print("Try to save 10 percent of your income.")
+print("Try to save at least 10 percent of your income, which is,", (total_leftover/10))
