@@ -2,10 +2,10 @@
 
 name = input('What is your name?')
 
-print(name,"is a crazy name I wonder who named you.")
+print(name,"is a crazy name. I wonder who named you.")
 
-print("so,", name, "riddle me this.")
+print("so,", name,", riddle me this.")
 
-woodchuck = input("If a woodchuck could chuck wood how much wood would a woodchuck chuck?")
+woodchuck = input("If a woodchuck could chuck wood, how much wood would a woodchuck chuck?")
 
-print(woodchuck, "? I bet it's more")
+print(woodchuck,"?", "I bet it's more.")
