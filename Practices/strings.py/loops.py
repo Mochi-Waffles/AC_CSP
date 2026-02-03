@@ -1,4 +1,4 @@
-import random #liberty imported at the top
+# import random #liberty imported at the top
 start = 0 
 
 while start <= 20: 
