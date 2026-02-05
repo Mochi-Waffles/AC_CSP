@@ -1,14 +1,13 @@
 #AC
+income=float(input("What is your monthly income cost?"))
 
-income=float(input("What is your monthly income?"))
+rent=float(input("What is your monthly rent cost?"))
 
-rent=float(input("What is your monthly rent?"))
+utilities=float(input("What is your monthly utilities cost?"))
 
-utilities=float(input("What is your monthly cost of utilities?"))
+groceries=float(input("What is your monthly groceries cost?"))
 
-groceries=float(input("What is your monthly payment for groceries?"))
-
-transportation=float(input("What is your monthly cost of transportation?"))
+transportation=float(input("What is your monthly transportation cost?"))
 
 total_leftover=income-(rent+utilities+groceries+transportation)
 
@@ -25,3 +24,8 @@ print(transportation,"Transportation is",transportation/income*100,"percent of i
 print("You have", total_leftover, "left.")
 
 print("Try to save at least 10 percent of your income, which is,", (total_leftover/10))
+
+def money(income):
+    income=float(input(f"what is your monthly {income} cost:"))
+
+money(income)
