@@ -1,3 +1,5 @@
+//AC
+
 #include <stdio.h>
 
 int main(){
@@ -43,6 +45,6 @@ int main(){
     scanf("%s", subject);
 
 
- return 0; 
+return 0; 
 
 }
