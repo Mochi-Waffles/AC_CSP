@@ -14,16 +14,16 @@ int main(){
     printf("Choose a random malicious intent ending with 'ing': ");
     scanf("%s", &verb);
 
-       printf("Choose a random place: ");
+       printf("Choose a random place: \n");
     scanf("%s", &place);
 
-       printf("Choose a random animal: ");
+       printf("Choose a random animal:\n ");
     scanf("%s", &animal);
 
-           printf("Choose a random first name: ");
+           printf("Choose a random first name: \n");
     scanf("%s", &first);
 
-       printf("Choose a random ending for a word (ing, y, ee, etc): ");
+       printf("Choose a random ending for a word (ing, y, ee, etc): \n");
     scanf("%s", &ending);
 
 
