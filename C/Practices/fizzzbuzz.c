@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-int main(){
+int main(void){
    
-int start[50]
+int i[50]
 
-    for(int i = 1; i <= 50; i++){
-   
-
-    if (i/5 == 0 && i/3 == 0){
+   for(int i = 1; i <= 50; i++){
+  
+    if (i<=50 && i>0){
+    printf("%d+1/n", i)
+   }else if (i/5 == 0 && i/3 == 0){
         printf("%s","FizzBuzz");
     }else if (i/5==0){
         printf("%s","Buzz");
