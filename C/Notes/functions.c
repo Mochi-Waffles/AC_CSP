@@ -10,8 +10,9 @@ float divide(int num_one, int num_two){
 }
  
 void hello(char* name){
-    printf("Hello %s. Welcome to the internet, what would you prefer?\n", name);
+    printf("Hello %s. It's your time to serve for the cadet core.\n", name);
 }
+
 
 int main(){
 add ();
