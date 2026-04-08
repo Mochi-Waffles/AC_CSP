@@ -1,0 +1,16 @@
+<!--Hypertext Markup Language--> 
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>HTML BASICS NOTES</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>HTML BASICS NOTES</h1>
+        <h2>This is a subheading</h2>
+        <h6>This is thw smallest subheading</h6>
+        <P>This <i>is</i> a paragraph. <br> <b>everything apears that i write. </b>b>hsifdosa hfjhdsafsi. dfdsgfds</P>
+        <p>new line <u>haha u a new line aint you</u>u></p>
+    </body>
+
+</html>
