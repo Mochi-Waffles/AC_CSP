@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Javascript Notes</title> 
+<meta charset="UTF-8">
+<style>
+    img{
+        display: none;
+        width:50%;
+    }
+</style>
+
+<script>
+    let count=0
+    let img_count =0
+    let imgs = ["https://th.bing.com/th/id/OIP.MxXtzOfawovttENaoOkl_AHaFP?w=220&h=180&c=7&r=0&o=7&pid=1.7&rm=3", "https://tse4.mm.bing.net/th/id/OIP.d_uZAWpGTP8S8Xbmkg6kUQHaEk?rs=1&pid=ImgDetMain&o=7&rm=3", "https://4.bp.blogspot.com/-zmyw92Xe93E/T6vVub3vzTI/AAAAAAAACQw/8awJHp-eYXA/s320/greenland_shark.jpg"]
+
+    function change(){
+        if(img_count >= imgs.length){
+        img_count = 0
+        }else{
+            img_count += 1
+        }
+        document.getElementById("shark").src=imgs[img_count]
+    }
+
+    function color_change(){
+    document.getElementById("shift").style.color = document.getElementById('selected-color').value
+    }
+    function add(){
+       count+= 1
+        document.getElementById('number').innerHTML = count
+    }
+    function hover(id){
+        document.getElementById(id).style.backgroundColor ="orange"
+        document.getElementById(id).style.color="white"
+    }
+    function unhover(id){
+          document.getElementById(id).style.backgroundColor ="lightgray"
+        document.getElementById(id).style.color="black"
+    }
+    function popup(){
+        alert("Don't ever touch that again. Don't turn around.")
+    }
+    function show(){
+        if(document.getElementById("shark").style.display == "block"){
+        document.getElementById("shark").style.display = "none"
+    }else{
+    document.getElementById("shark").style.display = "block"
+    }
+    }
+    //onclick onmousedown onmouseup mouseover onmouseout
+</script>
+</head>
+<body>
+    <h1 id="shift" onclick="popup()">Javascript Notes</h1>
+    <input type="color" id="selected-color"/>
+    <button onclick="color_change()" onmouseover="hover('one')" onmouseout="unhover('one')" id="one">Change color</button>
+   <p id="number" onmouseover="show()">0</p>
+   <button onclick="add()"onmouseover="hover('two')" onmouseout="unhover('two')" id="two">increase</button>
+<img id="shark" alt="bigshark" src= "https://th.bing.com/th/id/OIP.MxXtzOfawovttENaoOkl_AHaFP?w=220&h=180&c=7&r=0&o=7&pid=1.7&rm=3" onmouseover="change()">
+      
+</body>
+</htms>
