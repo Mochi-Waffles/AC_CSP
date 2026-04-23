@@ -14,8 +14,8 @@ p{
     color: rgb(5, 5, 46);
      }
 p {color:rgb(26, 26, 94); padding: 10px;}
-h1 {font-family: papyrus; color:rgb(26, 26, 94); margin: 10px;}
-h2 {papyrus; color:rgb(26, 26, 94);}
+h1 {font-family: "Macondo"; color:rgb(26, 26, 94); margin: 10px;}
+h2 {font-family: "Macondo"; color:rgb(26, 26, 94);}
 body {  font-family: "Macondo", cursive;
   font-weight: 400;
   font-style: normal; color:rgb(26, 26, 94); background-color:rgb(229, 241, 252);}
@@ -25,7 +25,47 @@ div {
 border: 2px solid rgb(231, 237, 247);
 background-color: rgb(31, 45, 58);
 padding: 20px;};
+img{
+        display: none;
+        width:50%;
+    }
  </style>
+
+<script>
+
+let count=0
+    let img_count = 0
+    let imgs = ["https://th.bing.com/th/id/OIP.MxXtzOfawovttENaoOkl_AHaFP?w=220&h=180&c=7&r=0&o=7&pid=1.7&rm=3", "https://th.bing.com/th/id/R.e9f401763258c5c273b10e7f60db59cf?rik=iOauq0WeKOGeCA&riu=http%3a%2f%2f1.bp.blogspot.com%2f_b4y465HJbxM%2fTPu7LKD7T3I%2fAAAAAAAAAC4%2fpo5xd38jebk%2fw1200-h630-p-k-no-nu%2ftiburon%252Bperegrino.jpg&ehk=01aCUyOoN3%2frGu0Ja%2f3QW0F39FujafaX3aYZzjT%2bw5A%3d&risl=&pid=ImgRaw&r=0"]
+    
+    function change(){
+        if(img_count >= imgs.length){
+        img_count = 0
+        }else{
+            img_count += 1
+        }
+        document.getElementById("shark").src=imgs[img_count]
+    }
+    
+    function show(){
+        if(document.getElementById("shark").style.display == "block"){
+        document.getElementById("shark").style.display = "none"
+    }else{
+    document.getElementById("shark").style.display = "block"
+    }
+    }
+   
+    function add(){
+       count+= 1
+        document.getElementById('number').innerHTML = count
+    }
+
+    function show(){
+    if(document.getElementById("number").style.display == 1){
+     document.getElementById("number").style.display = "please speed i need this"
+}
+}
+</script>
+
 <!--have a picture, then put the words next to the image with the title on the top. Put things in a div, if you want them to be next to put them both in divs then in one alltogether. -->
 <body div>
     <h1>The Known Underwater World of Sharks</h1>
@@ -63,9 +103,10 @@ padding: 20px;};
 <a href="https://www.sharksider.com/50-amazing-shark-facts/link">To learn more facts </a>
 
         <h2>
-            <i>BASKING SHARKS (Cetorhinus maximus)</i>
+            <i>BASKING SHARKS (Cetorhinus maximus) ((Hover over to see another picture))</i>
         </h2>
-        <img src="https://th.bing.com/th/id/OIP.MxXtzOfawovttENaoOkl_AHaFP?w=220&h=180&c=7&r=0&o=7&pid=1.7&rm=3" height="250px"/>
+        <img id="shark" alt="bigshark" src= "https://th.bing.com/th/id/OIP.MxXtzOfawovttENaoOkl_AHaFP?w=220&h=180&c=7&r=0&o=7&pid=1.7&rm=3" onmouseover="change()">
+      
       
         <p>
            Basking sharks may look terrifying to some, but to others, they're a wonder. These sharks are found in the Atlantic and pacific oceans, staying in warmer climates. They usually stay near the surface, though during migration they can dive up to 4,147 feet underwater. Dispite their large size of up to 10 meters or 36 feet, Basking sharks stick with a special diet of zooplanktin, barnacle larvae, and fish eggs. The way they eat, is they slowly float around in the ocean and wait for their food to drift in their mouths. Basking sharks are the second largest fish in the world that are alive today. They have a lifespan of 30 years, though it's not official yet, it's speculated they can live longer. 
@@ -92,5 +133,13 @@ padding: 20px;};
             The greenland shark isn't this creature's only name; it's also known as the grey shark or the gurry shark. Their lifespan is one of the largest, estimated to be somewhere between 272 and 512 years. They're found deep underwater, from 4,900 to 8,500 feet deep. They reside inside the Arctic ocean,
          </p>
 
+         
 
-        </html> <!--ALT Z-->
+         <body>
+            <p id="number" onmouseover="show()">0</p>
+            <button onclick="add()"onmouseover="hover('two')" onmouseout="unhover('two')" id="two">Here's a button to click that will increase numbers of shark thoughts you have</button>
+        </body>
+
+       
+         </html> <!--       <img src="https://th.bing.com/th/id/OIP.MxXtzOfawovttENaoOkl_AHaFP?w=220&h=180&c=7&r=0&o=7&pid=1.7&rm=3" height="250px"/>
+         -->
