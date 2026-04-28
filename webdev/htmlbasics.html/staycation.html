@@ -16,8 +16,10 @@ h1 { font-family: "Macondo"; color: rgb(102, 39, 2); text-align: center; }
 body {background-color: rgb(247, 207, 189);}
 h3 { font-family: "Macondo"; color: rgb(66, 27, 4); text-align: center;  justify-content: center;}
 ul {font-family: "Macondo"; color: rgb(66, 27, 4);}
-img { padding: 30px; justify-content: space-between;}
-
+img { padding: 30px; justify-content: center; }
+#img {
+;
+}
 </style>
 
 <h3>
@@ -39,6 +41,39 @@ There's a lot of interesting history for the area, especially the name, so check
 Zion has an endangered species, the California Condor, living peacefully and safely within the area.
   </li> 
 </ul>
+
+<h4> 
+  More images(use mouse to alternate:)
+</h4>
+
+<script>
+  let count=0
+  let img_count =0
+  let imgs = [ "https://drivinvibin.com/wp-content/uploads/2022/10/canyon-in-zion-2022-01-18-23-47-19-utc.jpg", "https://tripmemos.com/wp-content/uploads/2024/12/Observation-Point-at-Zion-National-Park-1536x1257.jpg", "https://images.squarespace-cdn.com/content/v1/5dbdd800a7b69c23d81ff08d/de8814bb-a396-46aa-b32d-3e65b44571dc/Zion+Feb+2020-2.jpg", "https://wallpapercave.com/wp/wp6661725.jpg"]
+
+
+  function change(){
+    if(img_count >= imgs.length){
+    img_count = 0
+    }else{
+        img_count += 1
+    }
+    document.getElementById("zion").src=imgs[img_count]
+}
+
+function show(){
+  if(document.getElementById("zion").style.display == "block"){
+  document.getElementById("zion").style.display = "none"
+}else{
+document.getElementById("zion").style.display = "block"
+}
+}
+</script>
+
+<body>
+  <img id="zion" alt="thezion" src= "https://drivinvibin.com/wp-content/uploads/2022/10/canyon-in-zion-2022-01-18-23-47-19-utc.jpg" onmouseover="change()" >
+</body>
+
 </html>
 
-<!--THINGS LEFT TO DO: FLEXBOX AND CSS GRID, HIDE OR SHOW ADDITIONAL CONTENT: CREATE A HOVER IMAGE (use like 3 different ones for best result try to make them the same px size)-->
+<!--THINGS LEFT TO DO: CSS GRID, HIDE OR SHOW ADDITIONAL CONTENT-->
