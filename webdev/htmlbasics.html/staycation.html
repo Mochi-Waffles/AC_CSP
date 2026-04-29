@@ -5,21 +5,29 @@
 <meta charset="UTF-8">
 </head>
 <h1> ZION NATIONAL PARK</h1>
+
+<zion class="zion">
+  <img src="https://i.pinimg.com/736x/ec/89/a7/ec89a76315d188bdac255d3240162daa.jpg" height="250"/>
+  
 <img src="https://davekochphoto.com/wp-content/uploads/2018/05/500_7756-Edit-1920x1375.jpg" height="200px"/>
 
 <img src="https://ak.picdn.net/shutterstock/videos/1051996741/thumb/1.jpg" height="200px"/>    
 
 <img src="https://live.staticflickr.com/7902/40197674743_47b5302b09_b.jpg" height="200px"/>
 
+</zion>
+
 <style>
+.zion {
+display: flex;
+justify-content:space-evenly;
+}
+
 h1 { font-family: "Macondo"; color: rgb(102, 39, 2); text-align: center; } 
 body {background-color: rgb(247, 207, 189);}
 h3 { font-family: "Macondo"; color: rgb(66, 27, 4); text-align: center;  justify-content: center;}
 ul {font-family: "Macondo"; color: rgb(66, 27, 4);}
-img { padding: 30px; justify-content: center; }
-#img {
-;
-}
+img {justify-content: center;}
 </style>
 
 <h3>
@@ -61,6 +69,17 @@ Zion has an endangered species, the California Condor, living peacefully and saf
     document.getElementById("zion").src=imgs[img_count]
 }
 
+</script>
+
+<body>
+  <img id="zion" alt="thezion" src= "https://drivinvibin.com/wp-content/uploads/2022/10/canyon-in-zion-2022-01-18-23-47-19-utc.jpg" onmouseover="change()" >
+</body>
+
+
+</html>
+
+<!--THINGS LEFT TO DO: CSS GRID, HIDE OR SHOW ADDITIONAL CONTENT
+
 function show(){
   if(document.getElementById("zion").style.display == "block"){
   document.getElementById("zion").style.display = "none"
@@ -68,12 +87,5 @@ function show(){
 document.getElementById("zion").style.display = "block"
 }
 }
-</script>
 
-<body>
-  <img id="zion" alt="thezion" src= "https://drivinvibin.com/wp-content/uploads/2022/10/canyon-in-zion-2022-01-18-23-47-19-utc.jpg" onmouseover="change()" >
-</body>
-
-</html>
-
-<!--THINGS LEFT TO DO: CSS GRID, HIDE OR SHOW ADDITIONAL CONTENT-->
+-->
