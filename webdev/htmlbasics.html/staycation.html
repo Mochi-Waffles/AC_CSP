@@ -17,17 +17,30 @@
 
 </zion>
 
+
+<show class="images">
+<p>
+  Plus imagine all the good food you could get while you were out, how can you way no to that?
+</p>
+</show>
+
 <style>
 .zion {
 display: flex;
 justify-content:space-evenly;
 }
 
+.images {
+  color:rgb(75, 34, 6); font-family:"Macondo"; text-align: center;
+}
+
+
 h1 { font-family: "Macondo"; color: rgb(102, 39, 2); text-align: center; } 
 body {background-color: rgb(247, 207, 189);}
 h3 { font-family: "Macondo"; color: rgb(66, 27, 4); text-align: center;  justify-content: center;}
-ul {font-family: "Macondo"; color: rgb(66, 27, 4);}
-img {justify-content: center;}
+ul {font-family: "Macondo"; color: rgb(66, 27, 4); padding: 20px;}
+img {margin:30px;}
+h4 {margin: 20px;}
 </style>
 
 <h3>
@@ -51,7 +64,7 @@ Zion has an endangered species, the California Condor, living peacefully and saf
 </ul>
 
 <h4> 
-  More images(use mouse to alternate:)
+  More images(click to alternate:)
 </h4>
 
 <script>
@@ -71,21 +84,15 @@ Zion has an endangered species, the California Condor, living peacefully and saf
 
 </script>
 
+
 <body>
   <img id="zion" alt="thezion" src= "https://drivinvibin.com/wp-content/uploads/2022/10/canyon-in-zion-2022-01-18-23-47-19-utc.jpg" onmouseover="change()" >
 </body>
 
-
+<p id="number" onmouseover="show()">0</p>
+<button onclick="add()"onmouseover="hover('two')" onmouseout="unhover('two')" id="two">increase</button>
 </html>
 
-<!--THINGS LEFT TO DO: CSS GRID, HIDE OR SHOW ADDITIONAL CONTENT
+<!--THINGS LEFT TO DO: HIDE OR SHOW ADDITIONAL CONTENT
 
-function show(){
-  if(document.getElementById("zion").style.display == "block"){
-  document.getElementById("zion").style.display = "none"
-}else{
-document.getElementById("zion").style.display = "block"
-}
-}
-
--->
+Couldn't figure it out but I tried
